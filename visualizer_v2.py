@@ -1,11 +1,12 @@
-import tkinter as tk
 from PIL import Image, ImageDraw, ImageTk
+from colors import label2color
 import json
+import tkinter as tk
 
-filename = 'resume_1_1'
+filename = 'resume_1_0'
 
-annotations_dir = './annotations_louise'
-images_dir = './annotations_images_louise'
+annotations_dir = '../done'
+images_dir = '../annotations_images_louise'
 
 with open(f'{annotations_dir}/{filename}.json', 'r', encoding='utf-8') as file:
     cache = json.load(file)
@@ -33,10 +34,10 @@ def update_image(cache: dict):
             # The following code visualizes the bounding boxes of a single entry
             box = entry['box']
             label = entry['label']  # Get the label name
-            draw.rectangle(box, outline='red', width=2)
+            draw.rectangle(box, outline=label2color[label], width=2)
             if label:
                 # Display the label name near the bounding box
-                draw.text((box[0], box[1] - 10), label, fill='red')
+                draw.text((box[0], box[1] - 10), label, fill=label2color[label])
 
         # Update the canvas with the new image and adjust the window size
         width, height = img.size
