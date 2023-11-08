@@ -6,7 +6,7 @@ label2color = {
   "experience_years": "palevioletred",
   "education": "violet",
   "hard_skills": "pink",
-  "soft_skills": "lightpink",
+  "soft_skills": "olive",
   "certifications": "plum",
   "degree": "cyan",
   "seminars": "lavender",

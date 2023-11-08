@@ -3,9 +3,9 @@ from colors import label2color
 import json
 import tkinter as tk
 
-filename = 'resume_1_0'
+filename = 'resume_5_0'
 
-annotations_dir = '../done'
+annotations_dir = '../annotations_louise'
 images_dir = '../annotations_images_louise'
 
 with open(f'{annotations_dir}/{filename}.json', 'r', encoding='utf-8') as file:
