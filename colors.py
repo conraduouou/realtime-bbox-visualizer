@@ -3,7 +3,7 @@ label2color = {
   "gender": "brown",
   "experience": "red",
   "experience_role": "darkred",
-  "experience_years": "ivory",
+  "experience_years": "palevioletred",
   "education": "violet",
   "hard_skills": "pink",
   "soft_skills": "lightpink",
