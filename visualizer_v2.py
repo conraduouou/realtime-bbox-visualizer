@@ -2,8 +2,10 @@ from PIL import Image, ImageDraw, ImageTk
 from colors import label2color
 import json
 import tkinter as tk
+import sys
 
-filename = 'resume_5_0'
+# get filename from command line
+filename = sys.argv[1]
 
 annotations_dir = '../annotations_louise'
 images_dir = '../annotations_images_louise'
